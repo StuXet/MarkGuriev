@@ -9,13 +9,13 @@ Web developer
 Show Contacts
 
 Email
-richard@example.com
+Mark489@live.ru
 
 Phone
-+1 (213) 352-2795
++972 54-5470674
 
 Birthday
-June 23, 1982
+Oct 28, 1998 
 
 Location
 Sacramento, California, USA
