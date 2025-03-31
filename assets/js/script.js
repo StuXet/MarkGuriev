@@ -79,20 +79,17 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
   for (let i = 0; i < filterItems.length; i++) {
+    const itemCategory = filterItems[i].dataset.category.toLowerCase();
 
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    if (selectedValue === "all" || selectedValue === itemCategory) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
-
 }
+
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -143,17 +140,31 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    const targetPage = this.dataset.pageTarget || this.textContent.trim().toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+    // Show only the target page
+    for (let j = 0; j < pages.length; j++) {
+      if (pages[j].dataset.page === targetPage) {
+        pages[j].classList.add("active");
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
       }
     }
 
+    // Remove active class from all nav links
+    for (let k = 0; k < navigationLinks.length; k++) {
+      navigationLinks[k].classList.remove("active");
+
+      // Highlight the correct nav link if its text matches the target page
+      if (navigationLinks[k].textContent.trim().toLowerCase() === targetPage) {
+        navigationLinks[k].classList.add("active");
+      }
+    }
+
+    // Optional: highlight the clicked item (if it's a nav link like the avatar)
+    this.classList.add("active");
+
+    // Scroll to top
+    window.scrollTo(0, 0);
   });
 }
