@@ -1880,3 +1880,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* costum icon */
+.custom-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  color: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
