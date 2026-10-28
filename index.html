@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Guriev Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/Panim.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/medeo-font@1.0.0-rc.4.1/dist/sans.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/medeo-font@1.0.0-rc.4.1/dist/pixel.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-navbar">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#resume" class="nav-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="hero-text-content">
+            <h1 class="hero-title">Hi, I'm <span class="hero-name">Mark</span></h1>
+            <p class="hero-subtitle">Game Developer</p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-primary">View My Works</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="./assets/images/Panim.jpg" alt="Mark Guriev" class="hero-image">
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-video-wrapper">
+            <iframe 
+              class="hero-video" 
+              src="https://www.youtube.com/embed/TJ6aypXO9I8" 
+              title="Mark Guriev - Game Developer" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <h3 class="section-subtitle">Know Me More</h3>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="about-greeting">Hi, I'm Mark</h2>
+          <p>
+            I am a passionate programmer who thrives on the journey of game creation. I find fulfillment in solving complex challenges, crafting immersive experiences, and bringing entire worlds to life through code and creativity.
+          </p>
+          <p>
+            I specialize in gameplay programming using Unity and Unreal Engine, with expertise in C# and C++. My focus is on building responsive and engaging player experiences.
+          </p>
+          <p>
+            I am a team oriented player with experience across multiple projects and professional environments, including team leadership and management roles. I value continuous learning, self growth, and collaboration, and I always aim high with a positive, driven mindset. :)
+          </p>
+        </div>
+        
+        <div class="about-info">
+          <div class="info-item">
+            <span class="info-label">Name:</span>
+            <span class="info-value">Mark Guriev</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email:</span>
+            <a href="mailto:mark489@live.ru" class="info-value">mark489@live.ru</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Languages:</span>
+            <span class="info-value">English, Russian, Hebrew</span>
+          </div>
+          <div class="info-item info-item-last">
+            <span class="info-label">Years of Experience:</span>
+            <span class="info-value" id="years-of-experience">0</span>
+          </div>
+          <div class="social-links-wrapper">
+            <div class="social-links">
+              <a href="https://github.com/StuXet" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="https://www.linkedin.com/in/markguriev/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="https://stuxet.itch.io/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="game-controller-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resume</h2>
+        <h3 class="section-subtitle">A summary of My Resume</h3>
+      </div>
+
+      <div class="resume-content">
+        <div class="resume-column resume-experience">
+          <h3 class="resume-block-title">My Experience</h3>
+          
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/logo.svg" alt="Government" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">Government</h4>
+            </div>
+            <p class="timeline-item-role">Unity Developer</p>
+            <span class="timeline-item-date">Dec 2024 — Present</span>
+            <ul class="timeline-item-description">
+              <li>Designing and developing Unity-based projects, solutions, and interactive experiences to meet the specific requirements of government subsidiaries and international clients.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/HoppaPlay.png" alt="Hoppa-Play" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">Hoppa-Play (Contract)</h4>
+            </div>
+            <p class="timeline-item-role">Game Developer</p>
+            <span class="timeline-item-date">Jul 2024 — Oct 2024</span>
+            <ul class="timeline-item-description">
+              <li>Developed hyper-casual mobile puzzle games in Unity, focused on interactive "unboxing" gameplay experiences. Worked on implementing tactile, touch-driven interactions such as peeling tape, unscrewing bolts, opening layered containers, and manipulating different box types, including cardboard, metal, and plastic. Integrated animations, particle effects, sound triggers, and haptic feedback to enhance player satisfaction and responsiveness.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/CloverBite.jpg" alt="Clover Bite" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">Clover Bite (Contract)</h4>
+            </div>
+            <p class="timeline-item-role">Game Developer</p>
+            <span class="timeline-item-date">Jun 2022 — Mar 2023</span>
+            <ul class="timeline-item-description">
+              <li><strong>MDA Simulator:</strong> Developed a simulator for Israel's national emergency medical service (MDA) using Unity and C#. Tasks included implementing new features, fixing bugs, and refactoring existing systems.</li>
+              <li><strong>Outsourced Project for Ludeos (formerly Playabels):</strong> Integrated CS:GO gameplay clips into standalone playable experiences using the CS:GO SDK and Hammer++. Scripted game logic and interactions in Visual Studio Code to recreate and enhance recorded player scenarios.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-column resume-education">
+          <h3 class="resume-block-title">My Education</h3>
+          
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/Futuregames.png" alt="Futuregames" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">Futuregames</h4>
+            </div>
+            <p class="timeline-item-role">Higher Vocational Education Diploma, Game Programmer</p>
+            <span class="timeline-item-date">Sep 2024 — May 2026</span>
+            <ul class="timeline-item-description">
+              <li>Hands-on training in C++ and C# for gameplay, physics, AI, and tools development</li>
+              <li>Game development in Unreal Engine 4/5 and Unity with clean, efficient code practices</li>
+              <li>Participated in collaborative, studio-like game projects across disciplines</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/ArtFX.jpg" alt="ArtFX" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">ArtFX</h4>
+            </div>
+            <p class="timeline-item-role">Master's degree, Technical Director</p>
+            <span class="timeline-item-date">Sep 2023 — Jun 2024</span>
+            <ul class="timeline-item-description">
+              <li>Focused on game engine development and engine programming in C++</li>
+              <li>Created a custom engine using OpenGL, Raylib, and Ogre</li>
+              <li>Developed in Unreal Engine and deepened C++ for real-time systems</li>
+              <li>Trained in portfolio development, interviews, and CV building</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/Tiltan.jpg" alt="Tiltan School" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">Tiltan School of Design & Visual Communication</h4>
+            </div>
+            <p class="timeline-item-role">Bachelor of Science, Game Design & Development</p>
+            <span class="timeline-item-date">Apr 2021 — Jun 2023</span>
+            <ul class="timeline-item-description">
+              <li>Specialization in game programming with C#, C++, Unity, and Unreal</li>
+              <li>Studied game psychology, UI/UX, shaders, physics, and multiplayer systems</li>
+              <li>Practical experience in rapid prototyping, version control (GitHub), and teamwork</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-item-header">
+              <img src="./assets/images/AmalHadera.png" alt="Amal Hadera" class="timeline-item-icon" onerror="this.style.display='none'">
+              <h4 class="timeline-item-title">Amal Hadera Arts & Science High School</h4>
+            </div>
+            <p class="timeline-item-role">High school diploma & Technological Qualification Level 3.1, Electrical Systems and Control</p>
+            <span class="timeline-item-date">2014 — 2017</span>
+            <ul class="timeline-item-description">
+              <li>Graduated with a Technological Qualification Certificate (Level 3.1)</li>
+              <li>Specialized in command and control power systems under the Ministry of Education standards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-column resume-skills">
+          <h3 class="resume-block-title">My Skills</h3>
+          
+          <div class="skills-category">
+            <h4 class="skills-category-title">Game Development & Programming</h4>
+            <ul class="skills-list">
+              <li class="skill-item">Unity (C#)</li>
+              <li class="skill-item">Unreal Engine (C++)</li>
+              <li class="skill-item">C, C++</li>
+              <li class="skill-item">C#</li>
+              <li class="skill-item">Gameplay Programming</li>
+              <li class="skill-item">Character Controllers</li>
+              <li class="skill-item">Prototyping & Rapid Iteration</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title">Technologies & Tools</h4>
+            <ul class="skills-list">
+              <li class="skill-item">Visual Studio</li>
+              <li class="skill-item">GitHub</li>
+              <li class="skill-item">Git</li>
+              <li class="skill-item">Perforce</li>
+              <li class="skill-item">Hammer++</li>
+              <li class="skill-item">Photoshop</li>
+              <li class="skill-item">CapCut</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="skills-category-title">Specializations</h4>
+            <ul class="skills-list">
+              <li class="skill-item">Game Design</li>
+              <li class="skill-item">Gameplay Programming</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Portfolio</h2>
+        <h3 class="section-subtitle">Some of my most recent projects</h3>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="game-development">Game Development</button>
+        <button class="filter-btn" data-filter="engine-tools">Engine & Tools</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- 
+          Portfolio items can use:
+          - Images: <img src="./path/to/image.png" alt="Description">
+          - GIFs: <img src="./path/to/animation.gif" alt="Description">
+          - Videos: <video src="./path/to/video.mp4" autoplay loop muted playsinline></video>
+        -->
+        <!-- Game Development Projects -->
+        <div class="portfolio-item active" data-category="game-development" data-project-id="gnome-splash">
+          <a href="https://futuregames.itch.io/gnome-splash" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <div class="portfolio-media">
+              <img src="./assets/images/sD2t3.png" alt="Gnome Splash" loading="lazy">
+            </div>
+            <div class="portfolio-title-wrapper">
+              <h4 class="portfolio-title">Gnome Splash</h4>
+              <img src="./assets/images/unreal-engine.svg" alt="Unreal Engine" class="portfolio-tech-icon">
+            </div>
+            <p class="portfolio-category">Game Development</p>
+          </a>
+        </div>
+
+        <div class="portfolio-item active" data-category="game-development" data-project-id="dark-descent">
+          <a href="https://futuregames.itch.io/darkdescent" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <div class="portfolio-media">
+              <img src="./assets/images/XQZtiY.png" alt="Dark Descent" loading="lazy">
+            </div>
+            <div class="portfolio-title-wrapper">
+              <h4 class="portfolio-title">Dark Descent</h4>
+              <img src="./assets/images/unity.svg" alt="Unity" class="portfolio-tech-icon">
+            </div>
+            <p class="portfolio-category">Game Development</p>
+          </a>
+        </div>
+
+        <div class="portfolio-item active" data-category="game-development" data-project-id="growbot">
+          <a href="https://futuregames.itch.io/growbot" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <div class="portfolio-media">
+              <img src="./assets/images/IrZdo2.png" alt="GROWBOT" loading="lazy">
+            </div>
+            <div class="portfolio-title-wrapper">
+              <h4 class="portfolio-title">GROWBOT</h4>
+              <img src="./assets/images/unity.svg" alt="Unity" class="portfolio-tech-icon">
+            </div>
+            <p class="portfolio-category">Game Development</p>
+          </a>
+        </div>
+
+        <div class="portfolio-item active" data-category="game-development" data-project-id="once-upon-a-fantasy">
+          <a href="https://georush.itch.io/once-upon-a-fantasy" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <div class="portfolio-media">
+              <img src="./assets/images/zrsWo3.png" alt="Once Upon A Fantasy" loading="lazy">
+            </div>
+            <div class="portfolio-title-wrapper">
+              <h4 class="portfolio-title">Once Upon A Fantasy</h4>
+              <img src="./assets/images/unity.svg" alt="Unity" class="portfolio-tech-icon">
+            </div>
+            <p class="portfolio-category">Game Development</p>
+          </a>
+        </div>
+
+        <div class="portfolio-item active" data-category="game-development" data-project-id="click-and-learn">
+          <a href="https://stuxet.itch.io/gd4c" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <div class="portfolio-media">
+              <img src="./assets/images/UBzoes.png" alt="Click and Learn" loading="lazy">
+            </div>
+            <div class="portfolio-title-wrapper">
+              <h4 class="portfolio-title">Click and Learn</h4>
+              <img src="./assets/images/unity.svg" alt="Unity" class="portfolio-tech-icon">
+            </div>
+            <p class="portfolio-category">Game Development</p>
+          </a>
+        </div>
+
+        <div class="portfolio-item active" data-category="game-development" data-project-id="fall-of-the-aristocats">
+          <a href="https://stuxet.itch.io/fall-of-the-aristocats" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <div class="portfolio-media">
+              <img src="./assets/images/Y1ZdIZ.png" alt="Fall of the Aristocats" loading="lazy">
+            </div>
+            <div class="portfolio-title-wrapper">
+              <h4 class="portfolio-title">Fall of the Aristocats</h4>
+              <img src="./assets/images/unity.svg" alt="Unity" class="portfolio-tech-icon">
+            </div>
+            <p class="portfolio-category">Game Development</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modal Overlay -->
+  <div id="portfolio-modal" class="portfolio-modal">
+    <div class="portfolio-modal-overlay"></div>
+    <div class="portfolio-modal-content">
+      <div class="portfolio-modal-header">
+        <h2 class="portfolio-modal-title" id="modal-title">Project Title</h2>
+        <div class="portfolio-modal-actions">
+          <a id="modal-external-link" class="portfolio-modal-link" target="_blank" rel="noopener noreferrer">Play on itch.io</a>
+          <a id="modal-source-link" class="portfolio-modal-link portfolio-modal-link-secondary" target="_blank" rel="noopener noreferrer">View Source Code</a>
+          <button class="portfolio-modal-close" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="portfolio-modal-body">
+        <div class="portfolio-modal-main-content">
+          <div class="portfolio-modal-media-section">
+            <div class="portfolio-modal-main-media">
+              <img id="modal-main-image" src="" alt="" style="display: none;">
+              <video id="modal-main-video" src="" controls style="display: none;"></video>
+            </div>
+            <div class="portfolio-modal-gallery" id="modal-gallery"></div>
+          </div>
+          <div class="portfolio-modal-text-section" id="modal-content">
+            <!-- Content will be populated dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <h3 class="section-subtitle">Let's get in touch</h3>
+      </div>
+      
+      <div class="contact-content">
+        <a href="mailto:mark489@live.ru" class="contact-email">mark489@live.ru</a>
+        <div class="contact-social">
+          <a href="https://github.com/StuXet" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/markguriev/" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://stuxet.itch.io/" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="game-controller-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copyright">
+          Copyright © <span id="current-year">2026</span> <a href="#" class="footer-link">Mark Guriev</a>. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/easter-egg.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
